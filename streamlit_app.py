@@ -32,7 +32,7 @@ def confirmOrder():
         # st.write(month)
         
         response = requests.post(url, data=data)
-        st.write(response)
+
         if str(response.status_code) == "200":
             st.success("Your Order has been sent!")
     except requests.exceptions.RequestException as e:
@@ -68,5 +68,3 @@ def main():
         confirmOrder()
 
 main()
-
-
