@@ -37,6 +37,7 @@ def confirmOrder():
             st.success("Your Order has been sent!")
     except requests.exceptions.RequestException as e:
         st.error(e)
+        st.error(response.status_code)
 
 def main():
     global nameOfbuyer
@@ -67,3 +68,5 @@ def main():
         confirmOrder()
 
 main()
+
+
