@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import datetime
 from datetime import date
-st.set_page_config(page_title="Shop App",page_icon="🛒")
+st.set_page_config(page_title="Pasa-Buy",page_icon="🛒")
 
 st.title("Pasa-Buy")
 
