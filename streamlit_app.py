@@ -56,9 +56,9 @@ def main():
         "entry.1287434678" : nameOfbuyer,
         "entry.1845676056" : order,
         "entry.97520968" : modeOfPayment,
-        "entry.979361838_year" : str(year),
-        "entry.979361838_month" : str(month),
-        "entry.979361838_day" : str(day),
+        "entry.979361838_year" : f"{year}",
+        "entry.979361838_month" : f"{month}",
+        "entry.979361838_day" : f"{day}",
         "entry.1700478353" : desOrder,
         "entry.1452035887" : userContact
     }
