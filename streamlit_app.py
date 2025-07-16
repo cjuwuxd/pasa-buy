@@ -11,17 +11,17 @@ def confirmOrder(data):
     url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9BawsjXXrZjz7dpXlYHnbhCG1z78sUFb1u03COzGDwy33gw/formResponse"
 
     try:
-        st.write(nameOfbuyer)
-        st.write(order)
-        st.write(desOrder)
-        st.write(userContact)
-        st.write(modeOfPayment)
-        st.write(year)
-        st.write(day)
-        st.write(month)
+        # st.write(nameOfbuyer)
+        # st.write(order)
+        # st.write(desOrder)
+        # st.write(userContact)
+        # st.write(modeOfPayment)
+        # st.write(year)
+        # st.write(day)
+        # st.write(month)
         
         response = requests.post(url, data=data)
-        st.write(response)
+        # st.write(response)
         if str(response.status_code) == "200":
             st.success("Your Order has been sent!")
     except requests.exceptions.RequestException as e:
@@ -68,5 +68,3 @@ def main():
         confirmOrder(data)
 
 main()
-
-
