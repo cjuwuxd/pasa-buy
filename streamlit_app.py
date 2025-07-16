@@ -49,8 +49,9 @@ def main():
     dateOfOrder = str(dateOfOrder)
     dateOfOrder = dateOfOrder.split("-")
     year = dateOfOrder[0]
-    day = dateOfOrder[1]
-    month = dateOfOrder[2]
+    month = dateOfOrder[1]
+    day = dateOfOrder[2]
+
 
     data = {
         "entry.1287434678" : nameOfbuyer,
